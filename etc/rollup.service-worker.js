@@ -6,7 +6,7 @@ module.exports = {
     input: "./tmp/service-worker.js",
     output: {
         dir: "./public",
-        format: "esm"
+        format: "esm",
     },
-    plugins: [globals(), resolve(), terser()]
+    plugins: [globals(), resolve(), terser()],
 };

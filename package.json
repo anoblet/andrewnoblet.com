@@ -28,6 +28,8 @@
     },
     "homepage": "https://github.com/anoblet/web-starter-kit#readme",
     "devDependencies": {
+        "@anoblet/rollup-plugin-marked": "git+https://github.com/anoblet/rollup-plugin-marked.git",
+        "@rollup/plugin-commonjs": "^15.1.0",
         "@rollup/plugin-node-resolve": "^7.1.1",
         "@rollup/plugin-replace": "^2.3.1",
         "@rollup/plugin-typescript": "^3.0.0",
@@ -38,10 +40,13 @@
         "cz-conventional-changelog": "^3.1.0",
         "husky": "^4.3.0",
         "lint-staged": "^10.4.0",
+        "marked": "^1.2.0",
         "npm-run-all": "^4.1.5",
         "prettier": "^2.1.2",
         "rimraf": "^3.0.2",
         "rollup": "^1.31.1",
+        "rollup-plugin-copy": "^3.3.0",
+        "rollup-plugin-marked": "git+https://github.com/anoblet/rolllup-plugin-marked.git",
         "rollup-plugin-minify-html-literals": "^1.2.3",
         "rollup-plugin-node-globals": "^1.4.0",
         "rollup-plugin-size": "^0.2.2",
@@ -55,6 +60,11 @@
         }
     },
     "dependencies": {
+        "@anoblet/router": "git+https://github.com/anoblet/router.git",
+        "@material/mwc-drawer": "^0.18.0",
+        "@material/mwc-icon-button": "^0.18.0",
+        "@material/mwc-top-app-bar": "^0.18.0",
+        "@vanillawc/wc-markdown": "^1.6.3",
         "workbox-window": "^5.0.0"
     },
     "husky": {

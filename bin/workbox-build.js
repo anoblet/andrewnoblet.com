@@ -8,7 +8,7 @@ const buildServiceWorker = () => {
         swSrc,
         swDest,
         globDirectory: "public",
-        globPatterns: ["**/*.{js,css,html,png}"]
+        globPatterns: ["**/*.{js,css,html,png}"],
     }).then(({ count, size }) => {
         console.log(
             `Generated ${swDest}, which will precache ${count} files, totaling ${size} bytes.`
