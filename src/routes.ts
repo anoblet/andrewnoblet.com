@@ -23,4 +23,10 @@ export const routes = [
         component: "page-hosting",
         src: () => import("./pages/page-hosting"),
     },
+    {
+        name: "Services",
+        path: "/services",
+        component: "page-services",
+        src: () => import("./pages/page-services"),
+    },
 ];

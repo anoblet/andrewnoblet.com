@@ -1,6 +1,3 @@
-import "@material/mwc-drawer";
-import "@material/mwc-icon-button";
-import "@material/mwc-top-app-bar";
 import { html } from "lit-element";
 
 export default function () {

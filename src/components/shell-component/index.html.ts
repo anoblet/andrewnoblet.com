@@ -1,12 +1,12 @@
 import "@material/mwc-drawer";
 import "@material/mwc-icon-button";
-import "@material/mwc-top-app-bar";
+import "@material/mwc-top-app-bar-fixed";
 import { html } from "lit-element";
 import "../../components/navigation-component";
 
 export default function () {
     return html`
-        <mwc-top-app-bar>
+        <mwc-top-app-bar-fixed>
             <mwc-icon-button
                 icon="menu"
                 slot="navigationIcon"
@@ -28,6 +28,6 @@ export default function () {
                     <main></main>
                 </div>
             </mwc-drawer>
-        </mwc-top-app-bar>
+        </mwc-top-app-bar-fixed>
     `;
 }
