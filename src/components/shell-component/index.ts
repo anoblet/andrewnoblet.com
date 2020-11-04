@@ -9,7 +9,7 @@ import globalStyle from "../../global.css";
 export class ShellComponent extends LitElement {
     @query("main") main: HTMLElement;
     @query("mwc-drawer") drawer: any;
-    @query("mwc-top-app-bar") topAppBar: any;
+    @query("mwc-top-app-bar-fixed") topAppBar: any;
 
     public static get styles() {
         return [globalStyle, style];
