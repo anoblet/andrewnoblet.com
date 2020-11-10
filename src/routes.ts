@@ -29,4 +29,16 @@ export const routes = [
         component: "page-services",
         src: () => import("./pages/page-services"),
     },
+    {
+        name: "Tutoring",
+        path: "/tutoring",
+        component: "page-tutoring",
+        src: () => import("./pages/page-tutoring"),
+    },
+    {
+        name: "Mentorship",
+        path: "/mentorship",
+        component: "page-mentorship",
+        src: () => import("./pages/page-mentorship"),
+    },
 ];

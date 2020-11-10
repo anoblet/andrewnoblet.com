@@ -64,9 +64,9 @@
     },
     "dependencies": {
         "@anoblet/router": "git+https://github.com/anoblet/router.git",
-        "@material/mwc-drawer": "^0.18.0",
-        "@material/mwc-icon-button": "^0.18.0",
-        "@material/mwc-top-app-bar": "^0.18.0",
+        "@material/mwc-drawer": "^0.19.1",
+        "@material/mwc-icon-button": "^0.19.1",
+        "@material/mwc-top-app-bar": "^0.19.1",
         "@material/mwc-top-app-bar-fixed": "^0.19.1",
         "@vanillawc/wc-markdown": "^1.6.3",
         "workbox-window": "^5.0.0"
