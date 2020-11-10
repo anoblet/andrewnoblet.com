@@ -10,7 +10,7 @@ export default css`
         --primary-color: hsl(var(--primary-hue), 80%, 50%);
         --primary-color-dark: hsl(var(--primary-hue), 50%, 25%);
         --secondary-color: hsl(var(--secondary-hue), 100%, 40%);
-        --mdc-theme-primary: var(--primary-color);
+        --mdc-theme-primary: var(--primary-color-dark);
     }
 
     main {

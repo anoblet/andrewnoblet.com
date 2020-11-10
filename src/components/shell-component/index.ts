@@ -1,4 +1,4 @@
-import Router from "@anoblet/router";
+import { Router } from "../../Router";
 import { customElement, LitElement, query } from "lit-element";
 import { routes } from "../../routes";
 import style from "./index.css";
@@ -18,20 +18,7 @@ export class ShellComponent extends LitElement {
     public render = template.bind(this);
 
     firstUpdated() {
-        Router.install((location: any) => {
-            Router.routeChanged({
-                location,
-                routes,
-                portal: this.main,
-            });
-
-            // Close drawer
-            this.drawer.open = false;
-
-            // Reset scroll position
-            this.main.scrollTo(0, 0);
-        });
-
+        Router.install({ outlet: this.main, routes });
         this.registerNav();
     }
 
