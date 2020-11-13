@@ -10,6 +10,7 @@ module.exports = {
         dir: "./public/js",
         format: "esm",
     },
+    perf: true,
     plugins: [
         commonjs(),
         copy({ src: "**/*.md", dest: ".tsc" }),

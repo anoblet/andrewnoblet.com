@@ -14,6 +14,7 @@
         "copy": "cpx 'src/**/*.md' .tsc",
         "copy:watch": "cpx \"src/**/*.md\" .tsc --watch",
         "service-worker": "node bin/workbox-build.js && rollup -c etc/rollup.service-worker.js && rimraf tmp",
+        "save": "git add . & git commit -m \"chore(app): save\"",
         "server": "node bin/server.js",
         "start": "npm-run-all -p build:watch server",
         "start:production": "npm run build && npm run server",
