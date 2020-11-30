@@ -1,3 +1,5 @@
+import marked from "@anoblet/rollup-plugin-marked";
+import commonjs from "@rollup/plugin-commonjs";
 import resolve from "@rollup/plugin-node-resolve";
 import replace from "@rollup/plugin-replace";
 import minifyHTML from "rollup-plugin-minify-html-literals";
@@ -11,11 +13,13 @@ module.exports = {
         sourcemap: true,
     },
     plugins: [
+        commonjs(),
+        marked(),
+        minifyHTML(),
         replace({
             "process.env.NODE_ENV": JSON.stringify("production"),
         }),
         resolve({ dedupe: ["lit-element", "lit-html"] }),
-        minifyHTML(),
         terser({
             output: {
                 comments: false,

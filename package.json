@@ -13,6 +13,7 @@
         "commit": "git-cz",
         "copy": "cpx 'src/**/*.md' .tsc",
         "copy:watch": "cpx \"src/**/*.md\" .tsc --watch",
+        "deploy": "npm run build && npm run service-worker && firebase deploy",
         "service-worker": "node bin/workbox-build.js && rollup -c etc/rollup.service-worker.js && rimraf tmp",
         "save": "git add . & git commit -m \"chore(app): save\"",
         "server": "node bin/server.js",
@@ -33,7 +34,7 @@
     "devDependencies": {
         "@anoblet/rollup-plugin-marked": "git+https://github.com/anoblet/rollup-plugin-marked.git",
         "@rollup/plugin-commonjs": "^15.1.0",
-        "@rollup/plugin-node-resolve": "^7.1.1",
+        "@rollup/plugin-node-resolve": "^7.1.3",
         "@rollup/plugin-replace": "^2.3.1",
         "@rollup/plugin-typescript": "^3.0.0",
         "browser-sync": "^2.26.7",
@@ -64,6 +65,7 @@
         }
     },
     "dependencies": {
+        "@anoblet/material-icons": "git+https://github.com/anoblet/material-icons.git",
         "@anoblet/router": "git+https://github.com/anoblet/router.git",
         "@material/mwc-drawer": "^0.19.1",
         "@material/mwc-icon-button": "^0.19.1",
