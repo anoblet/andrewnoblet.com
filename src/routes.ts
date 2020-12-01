@@ -1,9 +1,10 @@
+import "./pages/page-home";
+
 export const routes = [
     {
         name: "Home",
         path: "/",
         component: "page-home",
-        src: () => import("./pages/page-home"),
     },
     {
         name: "Design",
