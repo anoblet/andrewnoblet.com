@@ -16,7 +16,9 @@ export default function () {
                 <span slot="title">Navigation</span>
                 <navigation-component></navigation-component>
                 <div slot="appContent">
-                    <main></main>
+                    <div id="container">
+                        <main></main>
+                    </div>
                 </div>
             </mwc-drawer>
         </mwc-top-app-bar-fixed>
