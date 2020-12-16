@@ -21,6 +21,9 @@ export class ShellComponent extends LitElement {
 
     firstUpdated() {
         Router.install({
+            animation: {
+                duration: 250,
+            },
             outlet: this.main,
             routes,
         });

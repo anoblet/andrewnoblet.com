@@ -7,6 +7,12 @@ export const routes = [
         component: "page-home",
     },
     {
+        name: "About",
+        path: "/about",
+        component: "page-about",
+        src: () => import("./pages/page-about"),
+    },
+    {
         name: "Design",
         path: "/design",
         component: "page-design",
