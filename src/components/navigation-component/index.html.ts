@@ -16,7 +16,7 @@ export default function () {
                     </li>
                 </ul>
             </li>
-            <li><a href="/about" target="_blank">About</a></li>
+            <li><a href="/about">About</a></li>
         </ul>
     `;
 }

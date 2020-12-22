@@ -1,8 +1,11 @@
 import { css } from "lit-element";
 
 export default css`
-    :host {
-        display: grid;
-        grid-gap: 1rem;
+    a {
+        text-decoration: underline;
+    }
+
+    h2 {
+        margin-block-end: 1rem;
     }
 `;
