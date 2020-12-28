@@ -1,9 +1,10 @@
-import { customElement, LitElement } from "lit-element";
+import { customElement } from "lit-element";
+import { PageElement } from "../../PageElement";
 import style from "./index.css";
 import template from "./index.html";
 
 @customElement("page-home")
-export class PageHome extends LitElement {
+export class PageHome extends PageElement {
     public static get styles() {
         return style;
     }

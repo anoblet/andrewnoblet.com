@@ -3,3 +3,4 @@
 -   Polymer
 -   LitElement
 -   LitHTML
+-   jQuery
