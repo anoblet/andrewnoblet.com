@@ -42,4 +42,10 @@ export const routes = [
         component: "page-mentorship",
         src: () => import("./pages/page-mentorship"),
     },
+    {
+        name: "Portfolio",
+        path: "/portfolio",
+        component: "page-portfolio",
+        src: () => import("./pages/page-portfolio"),
+    },
 ];
