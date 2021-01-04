@@ -5,6 +5,8 @@ import template from "./index.html";
 
 @customElement("page-home")
 export class PageHome extends PageElement {
+    pageTitle = "Home";
+
     public static get styles() {
         return style;
     }

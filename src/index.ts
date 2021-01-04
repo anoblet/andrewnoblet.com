@@ -1,7 +1,9 @@
 import {
     registerServiceWorker,
+    ServiceWorker,
     showUpdateSnackbar,
 } from "@anoblet/web-utilities";
+
 import "./components/shell-component";
 
 (async () => {
@@ -10,6 +12,8 @@ import "./components/shell-component";
     const el: any = document.createElement("shell-component");
     document.body.appendChild(el);
 })();
+
+const serviceWorker = new ServiceWorker({ source: "/service-worker.js" });
 
 if (location.hostname !== "localhost") {
     let updateRequested = false;
