@@ -68,7 +68,7 @@
     "dependencies": {
         "@anoblet/material-icons": "git+https://github.com/anoblet/material-icons.git",
         "@anoblet/router": "git+https://github.com/anoblet/router.git",
-        "@anoblet/web-utilities": "git+https://github.com/anoblet/web-utilities.git",
+        "@anoblet/web-utilities": "git+https://github.com/anoblet/web-utilities.git#dev",
         "@material/mwc-drawer": "^0.19.1",
         "@material/mwc-icon-button": "^0.19.1",
         "@material/mwc-top-app-bar": "^0.19.1",
