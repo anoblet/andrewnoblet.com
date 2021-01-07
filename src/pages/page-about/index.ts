@@ -15,12 +15,13 @@ export class PageAbout extends PageElement {
     public render = template.bind(this);
 
     firstUpdated() {
-        this.setLinkTarget();
+        this.setLinkAttributes();
     }
 
-    setLinkTarget() {
-        Array.from(this.shadowRoot.querySelectorAll("a")).map(
-            (a) => (a.target = "_blank")
-        );
+    setLinkAttributes() {
+        Array.from(this.shadowRoot.querySelectorAll("a")).map((a) => {
+            a.rel = "noopener";
+            a.target = "_blank";
+        });
     }
 }

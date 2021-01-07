@@ -27,6 +27,7 @@ export default function () {
             <h1>Portfolio</h1>
             <hr />
             <div>
+                <h2></h2>
                 <div class="flex gap padding wrap">
                     <div class="grow">${unsafeHTML(ClientLanguages)}</div>
                     <div class="grow">${unsafeHTML(ClientFrameworks)}</div>
